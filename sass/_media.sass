@@ -1,13 +1,20 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+    .hero
+        &-block
+            flex-direction: column
+        &-list
+            margin-bottom: 44px
+        &-text
+            padding-right: 10px
 @media (max-width: 968px)
     .container
         max-width: 700px
 @media (max-width: 768px)
     .container
         max-width: 576px
-        max-width: 92%
+        max-width: 90%
     .header
         &__contacts
             display: none
@@ -16,4 +23,20 @@
             padding: 15px 26px
         &__logo
             width: 91px
+    .hero
+        &-text
+            &__title
+                font-size: 24px
+                line-height: 1.4
+                margin-bottom: 13px
+            &__subtitle
+                font-size: 16px
+                margin-bottom: 28px
+        &-list
+            &__item
+                margin-bottom: 20px
+            &__text
+                font-size: 12px
+            &__image
+                margin-right: 15px
 
