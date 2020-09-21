@@ -12,7 +12,18 @@ img
     border-radius: 10px
     background-color: $button-color
     border: none
-
+    &:hover
+        background-color: lighten($button-color, 10%)
+        cursor: pointer
+.section
+    padding: 90px 0
+    &-title
+        +bold
+.input
+    border-radius: 10px
+    border: 1px solid $border-color
+    padding: 20px 26px
+    font-size: 15px
 @media (max-width: 1200px)
     .container
         width: 960px

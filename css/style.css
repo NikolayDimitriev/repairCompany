@@ -383,6 +383,27 @@ img {
   border: none;
 }
 
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.section-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.input {
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-size: 15px;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -535,6 +556,95 @@ img {
   max-width: 240px;
 }
 
+.offer {
+  background: url(../img/offer/offer-bg.png) no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  font-size: 24px;
+  line-height: 35px;
+  max-width: 360px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  display: inline-block;
+  font-size: 16px;
+  max-width: 241px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+.offer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 31px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 15px;
+}
+
+.offer-contacts__manager {
+  width: 224px;
+}
+
+.offer-contacts__tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.offer-contacts__phone {
+  text-decoration: none;
+  color: inherit;
+  line-height: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -551,11 +661,27 @@ img {
   .hero-text {
     padding-right: 10px;
   }
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+  .offer-contacts {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 968px) {
   .container {
     max-width: 700px;
+  }
+  .offer-contacts__manager {
+    margin-bottom: 18px;
   }
 }
 
@@ -591,6 +717,13 @@ img {
   }
   .hero-list__image {
     margin-right: 15px;
+  }
+  .offer {
+    background: #ffffff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
