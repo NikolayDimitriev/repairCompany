@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ремонт квартир</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js" defer></script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
                         " class="header__phone">+7 (495) 42-251-31
                         </a>
                     </div>
-                    <button class="button header__button">Перезвоните мне</button>
+                    <button class="button header__button" id="btn-modal">Перезвоните мне</button>
                 </div>
                 <!-- /.header__info -->
             </div>
@@ -116,7 +117,14 @@
         <!-- /.offer -->
     </main>
 
-
+    <div class="modal" id="modal-call">
+        <div class="modal-dialog">
+            <button class="modal-dialog__close" id="close">&times;</button>
+            <h4 class="modal-dialog__title">Всплывающее окно</h4>
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
 </body>
 
 </html>
